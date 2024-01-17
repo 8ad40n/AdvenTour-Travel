@@ -13,8 +13,25 @@ body {
   max-width: 1440px;
   margin: 0px auto;
 }
+.popular-text h1,
+.destination h1,
+.choose h1,
+.deals h1 {
+  color: #131318;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.popular-text p,
+.destination p,
+.choose p,
+.deals p {
+  margin: 24px auto;
+}
 .find button,
-.popular-text button {
+.popular-text button,
+.img3 button,
+.img2 button,
+.img1 button {
   border: none;
   width: 174px;
   height: 52px;
@@ -136,18 +153,7 @@ body {
 }
 
 /* section: popular-tour */
-.popular-text h1,
-.destination h1,
-.choose h1 {
-  color: #131318;
-  font-size: 2.5rem;
-  font-weight: 800;
-}
-.popular-text p,
-.destination p,
-.choose p {
-  margin: 24px auto;
-}
+
 .popular-text ul li {
   margin: 16px auto;
 }
@@ -287,6 +293,9 @@ body {
 }
 
 /* section: choose-us */
+.choose-us {
+  margin-bottom: 100px;
+}
 .choose p {
   width: 44.65vw;
 }
@@ -334,6 +343,113 @@ body {
 .guarantee {
   border: 1px solid rgba(233, 68, 68, 0.2);
   background: rgba(233, 68, 68, 0.05);
+}
+
+/* section: deals-discount */
+.deals p {
+  width: 44.65vw;
+}
+.time {
+  display: flex;
+  height: 24px;
+}
+.max {
+  display: flex;
+  height: 24px;
+}
+.loc {
+  display: flex;
+  height: 24px;
+}
+.img-head {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-bottom: 26px;
+}
+.img1 h1,
+.img2 h1,
+.img3 h1 {
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+.img1 h3,
+.img2 h3,
+.img3 h3 {
+  color: #ff5400;
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+.img1 p,
+.img2 p,
+.img3 p {
+  margin-bottom: 16px;
+  color: #5a5a5d;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  width: 31.39vw;
+}
+.img1,
+.img2,
+.img3 {
+  width: 81.25vw;
+  height: 93.46vh;
+
+  margin: 0px auto;
+  border: 1px solid;
+}
+.img-card {
+  width: 40.21vw;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+  padding: 50px;
+  margin-right: 56px;
+  margin-left: 56px;
+}
+.img1 {
+  background-image: url("../Images/Group\ 39.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 24px;
+  border-radius: 16px;
+  border: none;
+}
+.img2 {
+  background-image: url("../Images/Group\ 40.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-bottom: 24px;
+  border-radius: 16px;
+  border: none;
+}
+.img3 {
+  background-image: url("../Images/Group\ 39.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 24px;
+  border-radius: 16px;
+  border: none;
 }
 
 /* small device */
@@ -430,12 +546,14 @@ body {
     margin-bottom: 24px;
   }
 
-  .popular-text h1, .choose h1 {
+  .popular-text h1,
+  .choose h1 {
     color: #131318;
     font-size: 1.25rem;
     font-weight: 800;
   }
-  .popular-text p, .choose p {
+  .popular-text p,
+  .choose p {
     margin: 16px auto;
   }
   .popular-text ul li {
@@ -460,11 +578,13 @@ body {
   }
 
   /* section: destinations */
-  .destination p {
+  .destination p,
+  .deals p {
     width: 70vw;
     margin-bottom: 16px;
   }
-  .destination h1 {
+  .destination h1,
+  .deals h1 {
     font-size: 1.25rem;
   }
   .place {
@@ -565,29 +685,143 @@ body {
   }
 
   /* section: choose-us */
-  .choose p{
+  .choose p {
     width: 53.65vw;
   }
-  .card-row1{
+  .card-row1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .card-row2{
+  .card-row2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .card{
+  .card {
     width: 90.7%;
   }
-  .card p{
+  .card p {
     width: 80.89vw;
-
   }
-  .card h3{
+  .card h3 {
     font-size: 1.25rem;
+  }
+
+  /* section: deals-discount */
+  .img-card {
+    height: 59.4vh;
+    justify-content: end;
+  }
+
+  .time {
+    display: flex;
+    height: 20px;
+  }
+  .max {
+    display: flex;
+    height: 20px;
+  }
+  .loc {
+    display: flex;
+    height: 20px;
+  }
+  .img-head {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+  .img1 h1,
+  .img2 h1,
+  .img3 h1 {
+    color: #131318;
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+  .img1 h3,
+  .img2 h3,
+  .img3 h3 {
+    color: #ff5400;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+  }
+  .img1 p,
+  .img2 p,
+  .img3 p {
+    margin-bottom: 16px;
+    color: #5a5a5d;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    width: 60vw;
+  }
+  .img1,
+  .img2,
+  .img3 {
+    width: 89vw;
+    height: 93.46vh;
+
+    margin: 0px auto;
+    border: 1px solid;
+  }
+  .img-card {
+    width: 60vw;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2.5px);
+    padding: 25px;
+    margin-right: 56px;
+    margin-left: 56px;
+    margin-bottom: 24px;
+  }
+  .img1 {
+    background-image: url("../Images/Group\ 39.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 16px;
+    border-radius: 16px;
+    border: none;
+  }
+  .img2 {
+    background-image: url("../Images/Group\ 40.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 16px;
+    border-radius: 16px;
+    border: none;
+  }
+  .img3 {
+    background-image: url("../Images/Group\ 39.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 16px;
+    border-radius: 16px;
+    border: none;
+  }
+  .img-card button {
+    width: 25.44vw;
+    height: 7vh;
+    flex-shrink: 0;
   }
 }
