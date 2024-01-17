@@ -459,7 +459,6 @@ body {
   margin-bottom: 24px;
 }
 
-
 /* section: get-lost */
 .text ul li {
   margin-bottom: 16px;
@@ -488,6 +487,75 @@ body {
 }
 .text {
   margin-bottom: 24px;
+}
+.text h1 {
+  margin-bottom: 24px;
+}
+
+/* section: newsletter */
+
+.inputs {
+  width: 32.92vw;
+  /* height: 78.87vh; */
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 1px solid #ff5400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inputs h3 {
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+.inputs p {
+  width: 24.31vw;
+  margin-bottom: 24px;
+}
+.inputs hr {
+  width: 27.29vw;
+  height: 1px;
+  margin-bottom: 24px;
+}
+.inputs input {
+  width: 25.9vw;
+  height: 9.72vh;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  color: rgba(19, 19, 24, 0.3);
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  margin-bottom: 16px;
+  padding: 16px auto;
+  padding-left: 20px;
+}
+.inputs button {
+  width: 27.29vw;
+  height: 9.72vh;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #ff5400;
+  color: #fff;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border: none;
+}
+.save {
+  width: 46.67vw;
+}
+.save img {
+  width: 100%;
+}
+.subscribe {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 /* small device */
@@ -900,8 +968,76 @@ body {
     width: 89.33vw;
     height: 300px;
   }
-  .get-lost{
+  .get-lost {
     margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  /* section: newsletter */
+
+  .inputs {
+    width: 89vw;
+    /* height: 78.87vh; */
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid #ff5400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .inputs h3 {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+    padding-top: 24px;
+  }
+  .inputs p {
+    width: 76.8vw;
+    margin-bottom: 16px;
+  }
+  .inputs hr {
+    width: 76.8vw;
+    height: 1px;
+    margin-bottom: 24px;
+  }
+  .inputs input {
+    width: 73vw;
+    height: 9.72vh;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    color: rgba(19, 19, 24, 0.3);
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    margin-bottom: 12px;
+    padding: 16px auto;
+    padding-left: 20px;
+  }
+  .inputs button {
+    width: 76.8vw;
+    height: 9.72vh;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #ff5400;
+    color: #fff;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    margin-bottom: 24px;
+  }
+  .save {
+    width: 89.4vw;
+    margin-top: 24px;
+  }
+  .save img {
+    width: 100%;
+  }
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-bottom: 24px;
   }
 }
