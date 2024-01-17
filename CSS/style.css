@@ -137,13 +137,15 @@ body {
 
 /* section: popular-tour */
 .popular-text h1,
-.destination h1 {
+.destination h1,
+.choose h1 {
   color: #131318;
   font-size: 2.5rem;
   font-weight: 800;
 }
 .popular-text p,
-.destination p {
+.destination p,
+.choose p {
   margin: 24px auto;
 }
 .popular-text ul li {
@@ -284,6 +286,56 @@ body {
   justify-content: space-between;
 }
 
+/* section: choose-us */
+.choose p {
+  width: 44.65vw;
+}
+.card {
+  width: 39.79vw;
+  border-radius: 16px;
+  border: 1px solid;
+  padding-left: 32px;
+  padding-top: 32px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+.card img {
+  margin-bottom: 32px;
+}
+.card h3 {
+  margin-bottom: 16px;
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.card p {
+  width: 33.75vw;
+  margin-left: 0px;
+  font-size: 1rem;
+}
+.card-row1 {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+.card-row2 {
+  display: flex;
+  justify-content: center;
+}
+.hotels {
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+}
+.service {
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+.guarantee {
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background: rgba(233, 68, 68, 0.05);
+}
+
 /* small device */
 @media screen and (max-width: 576px) {
   /* header */
@@ -374,16 +426,16 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .popular{
+  .popular {
     margin-bottom: 24px;
   }
 
-  .popular-text h1 {
+  .popular-text h1, .choose h1 {
     color: #131318;
     font-size: 1.25rem;
     font-weight: 800;
   }
-  .popular-text p {
+  .popular-text p, .choose p {
     margin: 16px auto;
   }
   .popular-text ul li {
@@ -512,4 +564,30 @@ body {
     justify-content: space-between;
   }
 
+  /* section: choose-us */
+  .choose p{
+    width: 53.65vw;
+  }
+  .card-row1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-row2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card{
+    width: 90.7%;
+  }
+  .card p{
+    width: 80.89vw;
+
+  }
+  .card h3{
+    font-size: 1.25rem;
+  }
 }
