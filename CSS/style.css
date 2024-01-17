@@ -83,7 +83,7 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   margin-bottom: 100px;
 }
 .explore h1 {
@@ -160,13 +160,13 @@ body {
   padding-left: 20px;
 }
 .popular-img {
-  height: 550px;
+  width: 37.5vw;
 }
 .popular-img img {
   width: 100%;
 }
 .popular-text {
-  width: 577px;
+  width: 38.57vw;
 }
 .popular {
   /* display: grid;
@@ -369,11 +369,15 @@ body {
   }
 
   /* section: popular-tour */
+
   .popular {
     display: flex;
     flex-direction: column;
+  }
+  .popular{
     margin-bottom: 24px;
   }
+
   .popular-text h1 {
     color: #131318;
     font-size: 1.25rem;
@@ -399,13 +403,16 @@ body {
     width: 100%;
     margin: 0px auto;
   }
+  .popular-img {
+    width: 90vw;
+  }
 
   /* section: destinations */
   .destination p {
     width: 70vw;
     margin-bottom: 16px;
   }
-  .destination h1{
+  .destination h1 {
     font-size: 1.25rem;
   }
   .place {
@@ -504,4 +511,5 @@ body {
     flex-direction: column;
     justify-content: space-between;
   }
+
 }
